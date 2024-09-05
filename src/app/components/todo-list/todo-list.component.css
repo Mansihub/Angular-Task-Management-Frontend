@@ -1,0 +1,35 @@
+.todo-comp{
+  margin-top:35px;
+}
+table {
+    width: 100%;
+  }
+table th{
+  background-color: 	#D3D3D3;
+}
+
+.form-field-align{
+    width:40%;
+    display:inline-block;
+  }
+  #gap{
+    margin-left:10px;
+  }
+  td, th {
+    width: 25%;
+  }
+  
+  .filter-and-btn{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .add-task-btn{
+    margin-top:10px;
+    margin-left:10px;
+  }
+  
+.color {
+    background-image: url('https://t3.ftcdn.net/jpg/02/85/92/08/240_F_285920838_aakk0JOMG6kSRvN9aqePd3XFddAILIYl.jpg');
+    height: 340px;
+  }

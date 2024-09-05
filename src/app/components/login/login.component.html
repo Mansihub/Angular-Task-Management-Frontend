@@ -1,0 +1,45 @@
+<form class="login-form" [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+<mat-card class="login">
+
+<mat-card-header class="header">
+  <mat-card-title>Login</mat-card-title>
+</mat-card-header>
+
+<mat-card-content class="content" > 
+
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex. xxx@yy.zz" formControlName="email">
+        <mat-icon matSuffix> email</mat-icon>
+        <mat-error *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
+            Please enter a valid email
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" formControlName="password">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <mat-error *ngIf="loginForm.get('password').invalid">
+            Password must be atleast 5 digits long
+        </mat-error>
+    </mat-form-field>
+
+</mat-card-content>
+
+<mat-card-actions>
+    
+    <button  color="white" [disabled]="!loginForm.valid" mat-raised-button type="submit">
+        <span>Login</span>
+    </button>
+    
+    <button mat-raised-button color="gray" routerLink="/signup" class="signup">
+        <span class="signup-btn">New User? Sign up here</span>
+    </button>
+   
+</mat-card-actions>
+
+</mat-card>
+
+</form>
+    

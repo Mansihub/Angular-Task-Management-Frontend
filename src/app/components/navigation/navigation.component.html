@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" >
+    
+        <mat-icon class="icon">track_changes</mat-icon>
+    
+<span>
+    Task Management Application
+</span>
+    <span class="example-spacer"></span>
+    <button  mat-raised-button color="warn" *ngIf="(checkIsLoggedIn && isCurrentRoute('/tasks'))||isCurrentRoute('/tasks')" style="margin-left:8px;" (click)="logout()">LogOut</button>
+</mat-toolbar>
+
+      
+      
+      
+ 

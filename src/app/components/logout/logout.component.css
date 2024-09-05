@@ -1,0 +1,14 @@
+.logout-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .logout-card {
+    width: 800px;
+    margin: 20px;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+  }
